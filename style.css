@@ -1,0 +1,26 @@
+
+
+.figure {
+  display:none;
+  height: 24rem;
+  width: 20rem;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  flex-shrink: 0;
+}
+
+.game-box {
+  padding: 1rem;
+  margin: 6rem 0 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#letter-one, #letter-two, #letter-three, #letter-four{
+  border-bottom: 1px solid black;
+  width: 30px;
+  display: inline-block;
+  padding:5px;
+}

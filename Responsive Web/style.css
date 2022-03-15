@@ -1,0 +1,209 @@
+body{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#wrapper {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+
+.navbar {
+  background: teal;
+  color: gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30pt;
+  border: 3px solid #f5bc42;
+
+}
+.navbar a{
+  color: #f5bc42;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+    margin-left: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  display: block;
+  padding: 5px;
+}
+
+.list-item a:hover,nav a:hover {
+  color: gray;
+}
+
+#slogan {
+  font-size: 55px;
+  border-bottom: 5px solid gray;
+  padding-bottom: 25px;
+
+}
+
+#lower-txt {
+  font-size: 45px;
+
+
+}
+
+#pre{
+  background-color: white;
+ color: gray;
+ border: 2px solid #e7e7e7;
+ font-size: 16px;
+ font-weight: bold;
+ padding: 20px;
+
+}
+
+
+
+#resp-img {
+  width: 355px;
+  height: 280px;
+  display: flex;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  color: gray;
+}
+
+.gold, #promo {
+  background-color: #f5d98e;
+  padding: 20px;
+
+}
+
+.gold{
+  flex-grow: 1;
+}
+
+#promo{
+  flex-grow: .5;
+  font-size: 20pt;
+}
+
+.tabs a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #02968f;
+  width: 100%;
+  height: 150px;
+  justify-content: flex-end;
+}
+
+.tabs {
+margin: 0;
+  margin-right: 20px;
+  list-style-type: none;
+  padding: 0;
+  flex-grow: .5;
+}
+
+.list-item {
+
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-right: 0;
+  background-color: #d65a02;
+  width: 100%;
+  text-align: center;
+
+}
+
+.section-three{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  color: gray;
+
+
+}
+
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    flex-direction: column;
+    font-size: 16pt;
+  }
+
+  nav ul, nav li, nav a {
+    display: block;
+    padding: 2px;
+    margin: 0;
+
+  }
+
+  #nav-name{
+    font-size: 22pt;
+  }
+
+
+#promo{
+  text-align: center;
+}
+
+
+  #slogan, #lower-txt {
+    text-align: center;
+    font-size: 65px;
+    padding: 0;
+  }
+    #slogan{
+      padding-bottom: 25px;
+
+    }
+
+  #pre {
+    margin-left: 40%;
+    margin-right: 40%;
+
+  }
+
+  #resp-img {
+    display: none;
+  }
+
+  .gold {
+    flex-grow: 4;
+  }
+
+.tabs{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.section-three{
+display: block;
+}
+
+.footer{
+  border: 3px solid #f5bc42;
+}
+
+}

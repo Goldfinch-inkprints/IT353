@@ -1,0 +1,166 @@
+body {
+  background-color: #EDC79B;
+  margin-top: 200px;
+}
+
+.delete{
+  text-decoration: underline;
+  color:#CA6680;
+float: right;
+}
+
+.btn{
+  background-color: #CA6680;
+  color:white;
+  width: 50%;
+
+}
+
+.footer {
+  background-color: #D57A66;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: left;
+}
+
+.toplogo {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  left: 42%;
+
+}
+
+#triangle-left {
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to bottom right, rgba(99, 163, 117) 0%, rgba(99, 163, 117) 50%, rgba(255, 0, 0, 0)50%, rgba(255, 0, 0, 0) 100%);
+  display: inline-flex;
+  padding: 20px 0 0 40px;
+  position: fixed;
+  top: 0;
+}
+
+#triangle-right {
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to bottom left, rgba(99, 163, 117) 0%, rgba(99, 163, 117) 50%, rgba(255, 0, 0, 0)50%, rgba(255, 0, 0, 0) 100%);
+  display: inline-flex;
+  float: right;
+  padding: 20px 0 0 140px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#first{
+  font-size: 15pt;
+  text-align: center;
+
+}
+
+.pics{
+  float: right;
+  display: block;
+  width: 300px;
+  margin-left: 25px;
+}
+
+.about{
+  margin-bottom: 20px;
+}
+
+#last{
+  padding-bottom: 150px;
+}
+
+.wrapper{
+  width: 800px;
+  display: block;
+  margin: auto;
+}
+
+.contact-text{
+margin:18px;
+line-height: 10px;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color:black;
+}
+
+#bottomlogo{
+width: 100px;
+float: right;
+display: inline-block;
+margin-right: 5%;
+
+}
+.signup{
+  height:650px;
+}
+
+@media only screen and (max-width: 819px) {
+  .wrapper{
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+
+  #triangle-right {
+    width: 50%;
+    height: 100px;
+    left: 50%;
+    padding-left: 25%;
+
+
+  }
+
+  #triangle-left {
+    width: 50%;
+    height:100px;
+    padding-left: 10px;
+
+  }
+
+  .toplogo {
+    width: 95px;
+    height: auto;
+    top: 0;
+    padding: 0;
+    left: 38%;
+
+  }
+
+  .pics{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .btn{
+    margin-left: 90px !important;
+  }
+
+
+  .signup{
+    height:900px;
+  }
+
+}
+
+
+@media only screen and (min-width: 820px) {
+  .wrapper{
+    width: 600px;
+    display: block;
+    margin: auto;
+  }

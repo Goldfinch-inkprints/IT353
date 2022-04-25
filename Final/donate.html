@@ -38,13 +38,11 @@
 
 <h1>Donate</h1>
 
-<form>
-  <div class="form-group">
+<form class="pb-5">
+  <div class="form-group ">
     <label for="inputDonation">Amount</label>
     <input type="text" class="form-control" id="inputDonation" placeholder="$0.00">
   </div>
-</form>
-
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
   <label class="form-check-label" for="inlineRadio1">e-check</label>
@@ -57,29 +55,85 @@
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
   <label class="form-check-label" for="inlineRadio3">Credit Card</label>
 </div>
+</form
+
 
 
 <!-- echeck -->
 
-<form>
-  <div class="form-group">
+<form class="form-echeck">
+  <div class="form-group ">
     <label for="inputRoute">Routing Number</label>
-    <input type="text" class="form-control form-check" id="inputRoute" placeholder="123456789">
+    <input type="text" class="form-control" id="inputRoute" placeholder="123456789">
   </div>
   <div class="form-group">
     <label for="inputAccount">Account Number</label>
-    <input type="text" class="form-control form-check" id="inputAccount" placeholder="012345678">
+    <input type="text" class="form-control" id="inputAccount" placeholder="012345678">
   </div>
   <div class="form-group">
     <label for="inputReAccount">Re-enter Account Number</label>
-    <input type="text" class="form-control form-check" id="inputAccount2" placeholder="012345678">
+    <input type="text" class="form-control " id="inputAccount2" placeholder="012345678">
   </div>
 </form>
 
+<!-- Credit Card -->
 
+<form class="form-creditCard">
+  <div class="row">
+             <div class="col-md-6 mb-3">
+               <label for="cc-name">Name on card</label>
+               <input type="text" class="form-control" id="cc-name" placeholder="" required>
+               <small class="text-muted">Full name as displayed on card</small>
+               <div class="invalid-feedback">
+                 Name on card is required
+               </div>
+             </div>
+             <div class="col-md-6 mb-3">
+               <label for="cc-number">Credit card number</label>
+               <input type="text" class="form-control" id="cc-number" placeholder="" required>
+               <div class="invalid-feedback">
+                 Credit card number is required
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-3 mb-3">
+               <label for="cc-expiration">Expiration</label>
+               <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+               <div class="invalid-feedback">
+                 Expiration date required
+               </div>
+             </div>
+             <div class="col-md-3 mb-3">
+               <label for="cc-expiration">CVV</label>
+               <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+               <div class="invalid-feedback">
+                 Security code required
+               </div>
+             </div>
+           </div>
+</form>
 
+<!-- Source code https://codepen.io/Kofaka/pen/OPbqNo -->
 
-<a class="btn rounded-pill btn-lg btn-block" href="profile.html" role="button" >Submit</a>
+<div class="box form-payPal">
+  <span class="paypal-logo">
+    <i>Pay</i><i>Pal</i>
+  </span>
+
+  <br />
+
+  <button class="paypal-button">
+    <span class="paypal-button-title">
+      Buy now with
+    </span>
+    <span class="paypal-logo">
+      <i>Pay</i><i>Pal</i>
+    </span>
+  </button>
+</div>
+
+<a class="btn rounded-pill btn-lg btn-block mt-5" href="profile.html" role="button" >Submit</a>
 
 
 <div class="footer">
@@ -94,6 +148,8 @@
 
 
 </div>
+
+<script src="front.js"></script>
 
 </body>
 

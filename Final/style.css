@@ -3,6 +3,18 @@ body {
   margin-top: 200px;
 }
 
+#form-echeck{
+display:none;
+
+}
+#form-creditCard{
+  display:none;
+
+}
+
+#form-payPal{
+  display:none;
+}
 
 .delete{
   text-decoration: underline;
@@ -16,6 +28,12 @@ float: right;
   width: 50%;
 
 }
+
+.payments{
+  width:auto !important;
+}
+
+
 
 .footer {
   background-color: #D57A66;
@@ -111,7 +129,7 @@ margin-right: 5%;
 }
 
 .donate{
-  height:700px;
+  height:900px;
 }
 
 @media only screen and (max-width: 819px) {
@@ -213,20 +231,4 @@ margin-right: 5%;
     display: block;
     margin: auto;
   }
-}
-
-.form-echeck{
-  display:none;
-}
-
-.form-payPal{
-  display:none;
-}
-
-.form-creditCard{
-  display: none;
-}
-
-.mystyle{
-  display: block !important;
 }

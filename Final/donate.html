@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, strink-to-fit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,136 +20,145 @@
 
 <body class="donate">
 
-<div >
+  <div>
 
-<a href="portal.html">  <h2 id= "triangle-left" >Sign In</h2></a>
-<a href="index.html"><img class="toplogo" src="assets/logo.png" alt="tri-pups"></a>
-<a href="donate.html"><h2 id="triangle-right" >Donate</h2> </a>
+    <a href="portal.html">
+      <h2 id="triangle-left">Sign In</h2>
+    </a>
+    <a href="index.html"><img class="toplogo" src="assets/logo.png" alt="tri-pups"></a>
+    <a href="donate.html">
+      <h2 id="triangle-right">Donate</h2>
+    </a>
 
-</div>
-
-
-<div class="wrapper">
-
-  <p class="about" id="first">Help us build the world's largest shelter for puppies that have suffered from a life threating accident.</p>
-
-
-
-
-<h1>Donate</h1>
-
-<form class="pb-5">
-  <div class="form-group ">
-    <label for="inputDonation">Amount</label>
-    <input type="text" class="form-control" id="inputDonation" placeholder="$0.00">
   </div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">e-check</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">Paypal</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-  <label class="form-check-label" for="inlineRadio3">Credit Card</label>
-</div>
-</form
 
+
+  <div class="wrapper">
+
+    <p class="about" id="first">Help us build the world's largest shelter for puppies that have suffered from a life threating accident.</p>
+
+
+
+
+    <h1>Donate</h1>
+
+    <form class="">
+      <div class="form-group ">
+        <label for="currency-field">Enter Amount</label>
+          <input type="text" name="currency-field" class="form-control" id="inputDonation" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00">
+
+      </div>
+    </form>
+
+    <div class="w-100 pb-5">
+
+
+    <button type="button" class="btn rounded-pill payments " onclick="myCheck()">E-Check</button>
+    <button type="button" class="btn rounded-pill payments" onclick="myCredit()">Credit Card</button>
+    <button type="button" class="btn rounded-pill payments" onclick="myPaypal()">Paypal</button>
+</div>
 
 
 <!-- echeck -->
+    <div id="form-echeck">
 
-<form class="form-echeck">
-  <div class="form-group ">
-    <label for="inputRoute">Routing Number</label>
-    <input type="text" class="form-control" id="inputRoute" placeholder="123456789">
-  </div>
-  <div class="form-group">
-    <label for="inputAccount">Account Number</label>
-    <input type="text" class="form-control" id="inputAccount" placeholder="012345678">
-  </div>
-  <div class="form-group">
-    <label for="inputReAccount">Re-enter Account Number</label>
-    <input type="text" class="form-control " id="inputAccount2" placeholder="012345678">
-  </div>
-</form>
+      <form >
+        <div class="form-group ">
+          <label for="inputRoute">Routing Number</label>
+          <input type="text" class="form-control" id="inputRoute" placeholder="123456789">
+        </div>
+        <div class="form-group">
+          <label for="inputAccount">Account Number</label>
+          <input type="text" class="form-control" id="inputAccount" placeholder="012345678">
+        </div>
+        <div class="form-group">
+          <label for="inputReAccount">Re-enter Account Number</label>
+          <input type="text" class="form-control " id="inputAccount2" placeholder="012345678">
+        </div>
+      </form>
+    </div>
 
-<!-- Credit Card -->
-
-<form class="form-creditCard">
-  <div class="row">
-             <div class="col-md-6 mb-3">
-               <label for="cc-name">Name on card</label>
-               <input type="text" class="form-control" id="cc-name" placeholder="" required>
-               <small class="text-muted">Full name as displayed on card</small>
-               <div class="invalid-feedback">
-                 Name on card is required
-               </div>
-             </div>
-             <div class="col-md-6 mb-3">
-               <label for="cc-number">Credit card number</label>
-               <input type="text" class="form-control" id="cc-number" placeholder="" required>
-               <div class="invalid-feedback">
-                 Credit card number is required
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col-md-3 mb-3">
-               <label for="cc-expiration">Expiration</label>
-               <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-               <div class="invalid-feedback">
-                 Expiration date required
-               </div>
-             </div>
-             <div class="col-md-3 mb-3">
-               <label for="cc-expiration">CVV</label>
-               <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-               <div class="invalid-feedback">
-                 Security code required
-               </div>
-             </div>
-           </div>
-</form>
-
-<!-- Source code https://codepen.io/Kofaka/pen/OPbqNo -->
-
-<div class="box form-payPal">
-  <span class="paypal-logo">
-    <i>Pay</i><i>Pal</i>
-  </span>
-
-  <br />
-
-  <button class="paypal-button">
-    <span class="paypal-button-title">
-      Buy now with
-    </span>
-    <span class="paypal-logo">
-      <i>Pay</i><i>Pal</i>
-    </span>
-  </button>
-</div>
-
-<a class="btn rounded-pill btn-lg btn-block mt-5" href="profile.html" role="button" >Submit</a>
+    <!-- Credit Card -->
+<div id="form-creditCard">
 
 
-<div class="footer">
-<a href="index.html"><img id="bottomlogo" src="assets/logo.png" alt="tri-pups"></a>
+    <form >
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="cc-name">Name on card</label>
+          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <small class="text-muted">Full name as displayed on card</small>
+          <div class="invalid-feedback">
+            Name on card is required
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cc-number">Credit card number</label>
+          <input type="text" class="form-control" id="cc-number" placeholder="" required>
+          <div class="invalid-feedback">
+            Credit card number is required
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="cc-expiration">Expiration</label>
+          <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+          <div class="invalid-feedback">
+            Expiration date required
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-expiration">CVV</label>
+          <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+          <div class="invalid-feedback">
+            Security code required
+          </div>
+        </div>
+      </div>
+    </form>
 
-<p class="contact-text"> Contact Us | <a href="newUser.html">New Here? Sign up</a> </p>
-<p class="contact-text">1(800) tri-help | contact@tripups.com </p>
+    </div>
+
+    <!-- Source code https://codepen.io/Kofaka/pen/OPbqNo -->
+
+<div id="form-payPal">
 
 
+    <div class="box">
+      <span class="paypal-logo">
+        <i>Pay</i><i>Pal</i>
+      </span>
 
+      <br />
+
+      <button class="paypal-button" >
+        <span class="paypal-button-title">
+          Donate with
+        </span>
+        <span class="paypal-logo">
+          <i>Pay</i><i>Pal</i>
+        </span>
+      </button>
+    </div>
 </div>
 
 
-</div>
+    <a class="btn rounded-pill btn-lg btn-block mt-5" href="#" onclick="myFunction()" role="button">Submit</a>
 
-<script src="front.js"></script>
+
+    <div class="footer">
+      <a href="index.html"><img id="bottomlogo" src="assets/logo.png" alt="tri-pups"></a>
+
+      <p class="contact-text"> Contact Us | <a href="newUser.html">New Here? Sign up</a> </p>
+      <p class="contact-text">1(800) tri-help | contact@tripups.com </p>
+
+    </div>
+
+
+  </div>
+
+  <script src="front.js"></script>
 
 </body>
 
